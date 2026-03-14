@@ -1,6 +1,7 @@
 import CodeEditor from "../../components/CodeEditor";
 import DifficultSelector from "../../components/DifficultSelector";
 import LanguagesSelector from "../../components/LanguagesSelector";
+import ProblemDescription from "../../components/ProblemDescription";
 import "./styles.scss";
 const ChallengeGenerator = () => {
   return (
@@ -15,7 +16,7 @@ const ChallengeGenerator = () => {
           </div>
         </div>
         <div className="mid_wrapper">
-          <div className="w40"></div>
+          <div className="w40"><ProblemDescription/></div>
           <div className="w60">
             <CodeEditor />
           </div>
