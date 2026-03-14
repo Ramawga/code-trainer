@@ -10,8 +10,8 @@
     background-color: $black-03;
     border-radius: 16px;
     @include display-flex(flex-start, flex-start, column);
-
-    .top_wrapper{
+gap: 33px;
+    .top_wrapper, .mid_wrapper{
       width: 100%;
        @include display-flex(flex-start, center, row);
            gap: 32px;
