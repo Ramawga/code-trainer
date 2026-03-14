@@ -1,10 +1,10 @@
 import './styles/global.scss'
-
+import Header from './components/header'
 function App() {
 
   return (
     <>
-<p className="test">ola mundo</p>
+<Header/>
     </>
   )
 }
