@@ -1,13 +1,20 @@
-.challengeGenerator{
+.challengeGenerator {
   min-height: 100vh;
 
   @include grid($margin: 32px auto);
 
-  .wrapper{
-  min-height: 100vh;
-padding: 33px;
-  border: 1px solid $black-04;
+  .wrapper {
+    min-height: 100vh;
+    padding: 33px;
+    border: 1px solid $black-04;
     background-color: $black-03;
-  border-radius: 16px;
+    border-radius: 16px;
+    @include display-flex(flex-start, center, row);
+    .w60{
+      width: 60%;
+    }
+    .w40{
+      width: 40%;
+    }
   }
 }
