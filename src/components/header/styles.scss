@@ -1,0 +1,37 @@
+.header {
+  padding: 16px 0;
+  &__wrapper {
+    @include display-flex(center, flex-start, column);
+    @include grid();
+        @include mq("1024") {
+   @include display-flex(center, flex-start, row);
+    }
+  }
+  &__title {
+      @include display-flex(center, flex-start, row);
+    @include textConfig($white-01, 20, $fontBold, 20, left, initial, 0);
+    margin-right: 32px;
+    svg{
+      margin-right: 8px;
+    }
+    @include mq("1024") {
+      @include font-size(24);
+      @include line-height(24);
+    }
+  }
+  &__nav {
+     @include display-flex(center, center, row);
+     gap: 8px;
+     padding: 16px 0;
+        @include mq("1024") {
+        gap: 24px;
+    }
+    &link {
+       @include textConfig($white-01, 16, $fontRegular, 16, center, initial, 0);
+       @include transition();
+       &:hover{
+        text-decoration: underline ;
+       }
+    }
+  }
+}
