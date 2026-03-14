@@ -1,0 +1,25 @@
+.PageTitle{
+  h1{
+       @include textConfig(
+            $color-text-primary,
+            24,
+            $fontRegular,
+            24,
+            left,
+            initial,
+            0
+          );
+          margin-bottom: 12px;
+  }
+  p{
+       @include textConfig(
+            $color-text-secondary,
+            14,
+            $fontRegular,
+            14,
+            left,
+            initial,
+            0
+          );
+  }
+}

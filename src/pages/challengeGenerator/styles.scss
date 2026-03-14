@@ -10,17 +10,21 @@
     background-color: $black-03;
     border-radius: 16px;
     @include display-flex(flex-start, flex-start, column);
-gap: 33px;
-    .top_wrapper, .mid_wrapper{
+    gap: 33px;
+    .top_wrapper {
       width: 100%;
-       @include display-flex(flex-start, center, row);
-           gap: 32px;
+      @include display-flex(flex-start, center, row);
+      gap: 32px;
     }
-    .w60{
+    .w60 {
       width: 60%;
+      @include display-flex(flex-start, flex-start, column);
+      gap: 33px;
     }
-    .w40{
+    .w40 {
       width: 40%;
+         @include display-flex(flex-start, flex-start, column);
+      gap: 33px;
     }
   }
 }

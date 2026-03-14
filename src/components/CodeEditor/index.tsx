@@ -1,8 +1,10 @@
 import Editor from "@monaco-editor/react";
+import "./styles.scss";
+
 
 const CodeEditor = () => {
   return (
-    <div>
+    <div className="CodeEditor">
       <Editor
         height="400px"
         defaultLanguage="javascript"
