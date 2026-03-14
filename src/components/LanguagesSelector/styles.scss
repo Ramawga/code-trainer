@@ -1,0 +1,46 @@
+.LanguagesSelector {
+  background-color: #121213;
+  border-radius: 16px;
+  border: 1px solid $black-04;
+
+  padding: 16px;
+  &__wrapper {
+    .texts {
+      @include display-flex(center, space-between, row);
+      margin-bottom: 12px;
+      .title {
+        @include textConfig($color-text-primary, 16, $fontRegular, 16, left, initial, 0);
+      }
+      .supportText {
+        @include textConfig(
+          $color-text-secondary,
+          12,
+          $fontRegular,
+          12,
+          left,
+          initial,
+          0
+        );
+      }
+    }
+    .LanguagesButtons {
+      @include display-flex(center, flex-start, row);
+      gap: 8px;
+      button {
+        @include size(auto, 40px);
+        padding: 0 16px;
+        border-radius: 16px;
+        @include textConfig(
+          $color-text-primary,
+          16,
+          $fontRegular,
+          16,
+          center,
+          initial,
+          0
+        );
+          border: 1px solid $black-04;
+      }
+    }
+  }
+}

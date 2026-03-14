@@ -9,7 +9,13 @@
     border: 1px solid $black-04;
     background-color: $black-03;
     border-radius: 16px;
-    @include display-flex(flex-start, center, row);
+    @include display-flex(flex-start, flex-start, column);
+
+    .top_wrapper{
+      width: 100%;
+       @include display-flex(flex-start, center, row);
+           gap: 32px;
+    }
     .w60{
       width: 60%;
     }
