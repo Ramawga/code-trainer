@@ -1,0 +1,82 @@
+.test{
+  color: red;
+}
+/* RESET CSS */
+
+/* Remove margens e paddings padrão */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Melhor renderização de texto */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Altura base */
+html,
+body,
+#root {
+  height: 100%;
+}
+
+/* Configuração base do body */
+body {
+  line-height: 1.5;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: #0f172a;
+  color: #ffffff;
+}
+
+/* Remove estilo padrão de listas */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Links sem decoração */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Imagens responsivas */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Inputs e botões herdam fonte */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Botões sem estilo padrão */
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* Evita overflow de texto */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
