@@ -1,0 +1,69 @@
+.ProblemDescriptionContainer {
+  background-color: $color-background-tertiary;
+  border-radius: 16px;
+  border: 1px solid $black-04;
+  padding: 16px;
+  .titleContainer {
+    margin-bottom: 24px;
+    p {
+      @include textConfig(
+        $color-text-primary,
+        20,
+        $fontRegular,
+        20,
+        left,
+        initial,
+        0
+      );
+    }
+  }
+  .ProblemDescription {
+    margin-bottom: 24px;
+    p {
+      @include textConfig(
+        $color-text-primary,
+        14,
+        $fontRegular,
+        14,
+        left,
+        initial,
+        0
+      );
+    }
+  }
+  .hintsContainer {
+    .hintWrapper {
+      cursor: pointer;
+      margin-bottom: 8px;
+      padding: 8px;
+      border-radius: 8px;
+      background-color: $color-background-quaternary;
+      border: 1px solid $black-04;
+      .hintTitle {
+        @include textConfig(
+          $color-text-secondary,
+          14,
+          $fontRegular,
+          14,
+          left,
+          initial,
+          0
+        );
+      }
+      .hint {
+        margin-top: 16px;
+        .hintText {
+          @include textConfig(
+            $color-text-primary,
+            14,
+            $fontRegular,
+            14,
+            left,
+            initial,
+            0
+          );
+        }
+      }
+    }
+  }
+}
