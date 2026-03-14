@@ -1,3 +1,4 @@
+import CodeEditor from "../../components/CodeEditor";
 import DifficultSelector from "../../components/DifficultSelector";
 import LanguagesSelector from "../../components/LanguagesSelector";
 import "./styles.scss";
@@ -6,16 +7,18 @@ const ChallengeGenerator = () => {
     <section className="challengeGenerator">
       <div className="wrapper">
         <div className="top_wrapper">
-          <div className="w60">
-            <DifficultSelector />
-          </div>
           <div className="w40">
             <LanguagesSelector />
+          </div>
+          <div className="w60">
+            <DifficultSelector />
           </div>
         </div>
         <div className="mid_wrapper">
           <div className="w40"></div>
-          <div className="w60"></div>
+          <div className="w60">
+            <CodeEditor />
+          </div>
         </div>
       </div>
     </section>
