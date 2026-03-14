@@ -51,7 +51,6 @@
         );
       }
       .hint {
-        margin-top: 16px;
         .hintText {
           @include textConfig(
             $color-text-primary,
@@ -62,6 +61,7 @@
             initial,
             0
           );
+          margin-top: 16px;
         }
       }
     }

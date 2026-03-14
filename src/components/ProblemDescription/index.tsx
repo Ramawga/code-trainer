@@ -21,7 +21,14 @@ const ProblemDescription = () => {
       <div className="hintsContainer">
         <div className="hintWrapper" onClick={() => setOpen(!open)}>
           <p className="hintTitle">Hints (click to expand)</p>
-          <div className="hint" style={{ display: open ? "block" : "none" }}>
+          <div
+            className="hint"
+            style={{
+              maxHeight: open ? "300px" : "0px",
+              overflow: "hidden",
+              transition: "max-height 0.6s ease",
+            }}
+          >
             <p className="hintText">
               Consider transforming into a subset-sum problem: check if there
               exists a subset summing to total/2 using DP or bitset
