@@ -1,0 +1,62 @@
+.footer {
+  box-shadow: 0 -5px 10px rgba(82, 82, 82, 0.08);
+  padding: 33px 0;
+  &__wrapper {
+    @include grid();
+    @include display-flex(center, space-between, column);
+    @include mq("1024") {
+      @include display-flex(center, space-between, row);
+    }
+    .footer {
+      &__main {
+        margin-bottom: 32px;
+        @include mq("1024") {
+          margin-bottom: 0;
+        }
+        .title {
+          @include display-flex(center, center, row);
+          @include textConfig($white-01, 16, $fontBold, 16, left, initial, 0);
+          margin-bottom: 16px;
+          @include mq("1024") {
+            @include display-flex(center, flex-start, row);
+          }
+          svg {
+            margin-right: 8px;
+          }
+        }
+        .text {
+          @include textConfig(
+            $dark-gray-06,
+            12,
+            $fontRegular,
+            12,
+            center,
+            initial,
+            0
+          );
+          @include mq("1024") {
+            text-align: left;
+          }
+        }
+      }
+      &__links {
+        .linkTitle {
+          @include textConfig($white-01, 14, $fontBold, 14, left, initial, 0);
+          margin-bottom: 16px;
+        }
+        .link {
+          @include textConfig(
+            $dark-gray-06,
+            12,
+            $fontBold,
+            12,
+            left,
+            initial,
+            0
+          );
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+}
