@@ -3,6 +3,7 @@ import DifficultSelector from "../../components/DifficultSelector";
 import LanguagesSelector from "../../components/LanguagesSelector";
 import PageTitle from "../../components/PageTitle";
 import ProblemDescription from "../../components/ProblemDescription";
+import SubmitButton from "../../components/submitButton";
 import "./styles.scss";
 const ChallengeGenerator = () => {
   return (
@@ -17,6 +18,7 @@ const ChallengeGenerator = () => {
             <LanguagesSelector />
             <DifficultSelector />
             <CodeEditor />
+            <SubmitButton/>
           </div>
         </div>
       </div>

@@ -1,0 +1,11 @@
+.submitButtonContainer {
+  .submitButton {
+    background-color: $secondary-color;
+    @include size(90px, 40px);
+    @include display-flex(center, center, row);
+border-radius: 16px;
+    p {
+      @include textConfig($white-01, 16, $fontRegular, 16, left, initial, 0);
+    }
+  }
+}
