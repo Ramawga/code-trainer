@@ -1,5 +1,6 @@
 import CodeEditor from "../../components/CodeEditor";
 import DifficultSelector from "../../components/DifficultSelector";
+import GenerateButton from "../../components/GenerateButton";
 import LanguagesSelector from "../../components/LanguagesSelector";
 import PageTitle from "../../components/PageTitle";
 import ProblemDescription from "../../components/ProblemDescription";
@@ -17,6 +18,7 @@ const ChallengeGenerator = () => {
           <div className="w60">
             <LanguagesSelector />
             <DifficultSelector />
+            <GenerateButton/>
             <CodeEditor />
             <SubmitButton/>
           </div>

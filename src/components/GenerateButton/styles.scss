@@ -1,6 +1,6 @@
-.submitButtonContainer {
-  .submitButton {
-    background-color: $secondary-color;
+.generateButtonContainer {
+  .generateButton {
+    background-color: $primary-color;
     @include size(90px, 40px);
     @include display-flex(center, center, row);
     border-radius: 16px;
