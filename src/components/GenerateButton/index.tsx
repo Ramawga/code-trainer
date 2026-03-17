@@ -1,9 +1,13 @@
 import "./styles.scss";
 
-const GenerateButton = () => {
+type Props = {
+  onClick: () => void;
+};
+
+const GenerateButton = ({ onClick }: Props) => {
   return (
     <div className="generateButtonContainer">
-      <button className="generateButton">
+      <button className="generateButton" onClick={onClick}>
         <p>Generate</p>
       </button>
     </div>

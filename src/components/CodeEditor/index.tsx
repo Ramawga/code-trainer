@@ -1,14 +1,18 @@
 import Editor from "@monaco-editor/react";
 import "./styles.scss";
 
+interface StarterCode {
+  starterCode: string
+}
 
-const CodeEditor = () => {
+const CodeEditor = ({ starterCode }:StarterCode) => {
+
   return (
     <div className="CodeEditor">
       <Editor
         height="400px"
         defaultLanguage="javascript"
-        defaultValue="// escreva seu código aqui"
+        value={starterCode}
         theme="vs-dark"
         options={{
           minimap: { enabled: false },
